@@ -14,13 +14,18 @@
         <a href="{{url_for('profile')}}">Profile</a>
       </div>
       <body>
-        {% for j in range(1) %}
+        
         <div class="container">
-          <a href="{{url_for('status')}}"></a>
-            <h1>Event {{j}}</h1>
+          <a href="{{url_for('status')}}">Status</a>
+            <h1>Event default</h1>
           </a>
-          </div>
-          {% endfor %}
+        </div>
+        {%for i in event_database%}
+        <div class="container">
+        <a href="{{url_for('status')}}">Status</a>
+          <h1>Event {{i[1]}}</h1>
+        </div>
+        {%endfor%}
     </body>
       
 </html>
