@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Socioverse</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <link href="{{url_for('static',filename='login.css')}}" rel="stylesheet">
+    <body>
+        <header>
+            <h1>Socioverse Login</h1>
+        </header>
+        <main>
+            <form id="login_form" class="form_class" action="/signin" method="post">
+                <div class="form_div">
+                    <label>Email or Username:</label>
+                    <input id="email" class="field_class" name="username" type="text" placeholder="Enter Your Email">
+                    <label>Password:</label>
+                    <input id="pass" class="field_class" name="password" type="password" placeholder="Enter Password">
+                    <button type="submit" class="submit_class">Login</button>
+                </div>
+                <div class="info_div">
+                    <p>Not registered yet? Click <a href="{{url_for('register')}}">here</a> to join a social cause today !</p>
+                </div>
+            </form>
+        </main>
+        <footer>
+            
+        </footer>
+    </body>
+</html>

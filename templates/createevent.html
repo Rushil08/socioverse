@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap" rel="stylesheet">
+<html>
+  <head>
+    <link rel="stylesheet" href="{{url_for('static',filename='eventdecor.css')}}">
+  </head>
+    <div class="topnav">
+        <a href="{{url_for('home')}}"><img src="assets/tree.png" alt="SocioVerse" style="width: 18px; height: 18px;"></a>
+        <a href="{{url_for('contacts')}}">Contacts</a>
+        <a class="active" href="{{url_for('eventpage')}}">Create Event</a>
+        <a href="{{url_for('status')}}">Status</a>
+        <a href="{{url_for('profile')}}">Profile</a>
+      </div>
+
+        <header>
+            <h1 id="head">Create an Event</h1>
+            </header>
+            <body>
+              <div class="padd">
+            <div class="box">
+                <form action="/event" method="post">
+                <label for="title" style="padding-left: 30%;">Enter Title</label><br>
+                <input type="text" id="title" name="title" class="bigbox" required><br><br>
+                <label for="location" style="padding-left: 25%;">Enter Location</label><br>
+                <input type="text" id="location" name="location" class="bigbox" required><br><br>
+                <label for="duration" style="padding-left: 2%;">Startng Date&nbsp;&nbsp;&nbsp;&nbsp; Ending Date</label><br>
+                <input type="date" id="duration" name="duration" style="width: 100px" required>
+                <input type="date" id="duration" name="duration2" style="width: 100px" required><br><br>
+                <label for="particips">Minimum Number of Participants</label><br>
+                <input type="number" id="particips" name="particips" class="bigbox" required><br><br>
+                <label for="desc" style="padding-left: 32%;">Desciption</label><br>
+                <input type="type" id="desc" name="desc" class="bigbox1" required><br>
+                <p>Contact Information:</p>
+                <label for="number" style="padding-left: 17%;">Enter Mobile Number</label><br>
+                <input type="number" id="number" name="number"class="bigbox" ng-minlength="10" ng-maxlength="10" required><br><br>
+                <label for="email" style="padding-left: 16%;">Enter E-mail Address</label><br>
+                <input type="email" id="email" name="email"class="bigbox" required><br><br>
+                </div>
+                <button type="submit" class="subm" >Submit</button>
+              </form>
+            </div>
+    </body>
+    <footer style="color: #00C897;">Boo!</footer>
+      
+</html>

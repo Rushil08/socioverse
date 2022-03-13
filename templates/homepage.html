@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap" rel="stylesheet">
+<html>
+  <head>
+    <link rel="stylesheet" href="{{url_for('static',filename='homepagedecor.css')}}">
+  </head>
+    <div class="topnav">
+        <a class="active"href="{{url_for('home')}}"><img src="assets/tree.png" alt="SocioVerse" style="width: 20px; height: 20px;"></a>
+        <a href="{{url_for('contacts')}}">Contacts</a>
+        <a href="{{url_for('eventpage')}}">Create Event</a>
+        <a href="{{url_for('status')}}">Status</a>
+        <a href="{{url_for('profile')}}">Profile</a>
+      </div>
+      <body>
+        {% for j in range(1) %}
+        <div class="container">
+          <a href="{{url_for('status')}}"></a>
+            <h1>Event {{j}}</h1>
+          </a>
+          </div>
+          {% endfor %}
+    </body>
+      
+</html>

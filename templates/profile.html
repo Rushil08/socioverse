@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap" rel="stylesheet">
+    <div class="topnav">
+        <a href="{{url_for('home')}}"><img src="assets/tree.png" alt="SocioVerse" style="width: 18px; height: 18px;"></a>
+        <a href="{{url_for('contacts')}}">Contacts</a>
+        <a href="{{url_for('eventpage')}}">Create Event</a>
+        <a href="{{url_for('status')}}">Status</a>
+        <a class="active" href="{{url_for('profile')}}">Profile</a>
+      </div>
+    <div id="ProfilePage">
+        <div id="ProfileOptions">
+       </div>
+    </div>
+<header>
+    <link href="{{url_for('static',filename='profile.css')}}" rel="stylesheet">
+        <h1>Your Socioverse profile</h1>
+    </header>
+    <body>
+    <div id="Info">
+        <p>
+            <strong>Userame:</strong>
+            <span>{{username}}</span>
+        </p>
+        <p>
+            <strong>Registered Email:</strong>
+            <span>{{email}}</span>
+        </p>
+        <p>
+            <strong>No. of SocioCoins:</strong>
+            <span>{{sociocoins}}</span>
+        </p>
+    </div>
+    </body>
+</html>
+   
+  
