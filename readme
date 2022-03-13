@@ -1,0 +1,4 @@
+1) Keep everything in a single folder
+2) Run 'main.py' and open the link generated in terminal
+3) Default login info- username/email: username, username@gmail.com; password: password
+4) You can register another user and login with the created credentials as well(username cannot be repeated if it already exists)
